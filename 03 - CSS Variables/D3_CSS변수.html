@@ -18,9 +18,24 @@
     <input id="base" type="color" name="base" value="#ffc600">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img class="img" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    :root{
+      --base : #ffc600;
+      --blur : 10px;
+      --spacing : 10px;
+    }
+
+    img{
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl{
+      color: var(--base);
+    }
 
     /*
       misc styles, nothing to do with CSS variables
@@ -45,6 +60,16 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll(".controls input");
+
+    function handleUpdate(){
+      const suffix = this.dataset.sizing || ''; //date- 라는 접두어가 붙은것들은 dataset으로 접근할수있음.
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+  
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));    
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));    
+
   </script>
 
 </body>
