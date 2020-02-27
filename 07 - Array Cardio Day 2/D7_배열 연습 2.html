@@ -48,11 +48,25 @@
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
-
-    console.log(comments.findIndex(a => a.id === 823423));
-
-
+    console.table(comments);
+    const copyComments = comments.slice();
+    const delIndex = comments.findIndex(a => a.id === 823423);
+    comments.splice(delIndex, 1);
+    //일반적인 방법
+    console.log("삭제 확인");
+    console.table(comments);
     //강의 안보고 구현함.
+
+    console.log("\n\n\n 강의에서 구현한 방법 ");
+    console.table(copyComments);
+
+    const newComments = [
+      ...copyComments.slice(0, delIndex),
+      ...copyComments.slice(delIndex + 1)
+    ];
+
+    console.table(newComments);
+
   </script>
 </body>
 </html>
