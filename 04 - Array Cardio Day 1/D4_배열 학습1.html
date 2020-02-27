@@ -32,27 +32,71 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
 
+    const filter= inventors.filter(x => (x.year >= 1500 ) & (x.year < 1600));
+    console.table(filter);
+
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+
+    const map = inventors.map(x => x.first + " "+ x.last);
+    console.table(map); 
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 
+    const sort = inventors.sort((a,b) =>{
+      return (b.year < a.year) ? 1 : -1
+    });
+    console.table(sort);
+
+    //3항연산자사용. sort함수안에 함수를 제공하면 그 함수로 조건을 판단해 비교해서 정렬해준다.
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
+    const reduce = inventors.reduce((total, x) => {
+     return total + (x.passed - x.year) 
+    }, 0)
+    console.log(reduce);
+
     // 5. Sort the inventors by years lived
+
+    const livedSort = inventors.sort((a, b) =>{
+      const al = a.passed - a.year;
+      const bl = b.passed - b.year;
+      return (al < bl) ? 1 : -1
+    })
+    console.table(livedSort);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    
 
+    // const category = document.querySelector(".mw-category");
+    // const alist = Array.from(category.querySelectorAll("a"));
+    // const de = alist.map(alist => alist.textContent).filter(name => name.includes('de'));
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
+    const nameSort = people.sort((a,b) => {
+      as = a.split(', ');
+      bs = b.split(', ');
+      return (as[1] > bs[1]) ? 1 : -1;
+    })
+    console.table(nameSort);
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const dataSum = data.reduce((object, i) =>{
+      if(!object[i]){
+        object[i] =0;
+      }
+      object[i] ++;
+      return object
+    }, {  })
+    console.log(dataSum)
 
   </script>
 </body>
