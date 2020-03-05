@@ -57,7 +57,28 @@
         if (callNow) func.apply(context, args);
       };
     }
+ 
 
+    const sliderImg = document.querySelectorAll('.slide-in');
+
+    function checkSlide(e){
+      sliderImg.forEach(img => {
+        //이미지의 중간 지점
+        const slideInAt = (window.scrollY + window.innerHeight - img.height /2) ;
+        //이미지의 밑 지점
+        const imageBottom = img.offsetTop + img.height;
+        const isHalfshown = slideInAt > img.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if(isHalfshown && isNotScrolledPast){
+          img.classList.add('active');
+        }else{
+          img.classList.remove('active');
+        }
+
+      });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
   </script>
 
   <style>
