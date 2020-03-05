@@ -30,16 +30,18 @@
   const itemsList = document.querySelector('.plates');
   const items = JSON.parse(localStorage.getItem('items')) || [];
 
-  function addItem(e) {
+  function addItem(e){
     e.preventDefault();
     const text = (this.querySelector('[name=item]')).value;
-    const item = {
+    const item={
       text,
       done: false
-    };
-
+    }
     items.push(item);
     populateList(items, itemsList);
+
+    // 로컬스트로지에 Object를 그대로 넣을경우 object자체가 문자열로 들어감
+    // JSON으로 바꾼다음에 다시 그 데이터를 저장하면 문자열로 저장됨.
     localStorage.setItem('items', JSON.stringify(items));
     this.reset();
   }
@@ -55,8 +57,9 @@
     }).join('');
   }
 
-  function toggleDone(e) {
-    if (!e.target.matches('input')) return; // skip this unless it's an input
+  function toggleDone(e){
+    // input태그를 제외하고 다른 태그는 무시함.
+    if(!e.target.matches('input')) return;
     const el = e.target;
     const index = el.dataset.index;
     items[index].done = !items[index].done;
@@ -64,10 +67,11 @@
     populateList(items, itemsList);
   }
 
-  addItems.addEventListener('submit', addItem);
-  itemsList.addEventListener('click', toggleDone);
+  addItems.addEventListener('submit', addItem);     
+  itemsList.addEventListener('click', toggleDone);     
 
   populateList(items, itemsList);
+
 
 </script>
 
