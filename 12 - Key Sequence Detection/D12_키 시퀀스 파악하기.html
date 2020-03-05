@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+  let arr = [];
+  const secretCode = 'hahaha';
+  window.addEventListener('keyup', (e)=>{
+    console.log(e.key);
+    arr.push(e.key);
+    arr.splice(-secretCode.length -1 ,arr.length - secretCode.length); 
+    //배열에 있는 문자를 join으로 문자열로 바꾼뒤에 비밀키가 있는지 includes로 확인함.
+    //맞으면 true 틀리면 false를 리턴해줌
+    if(arr.join('').includes(secretCode)){
+      console.log("hahahaha 맞췃어요!");
+      cornify_add();
+    }
+    console.log(arr);
+  });
+</script>
+</body>
+</html>
