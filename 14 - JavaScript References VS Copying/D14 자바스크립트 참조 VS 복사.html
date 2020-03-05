@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Reference VS Copy</title>
+</head>
+<body>
+
+  <script>
+    // start with strings, numbers and booleans
+    console.log('숫자나 문자 부울린변수는 괜찮음.');
+    let age = 100;
+    let age2 = 200;
+    console.log(age, age2);
+    age = 200;
+    console.log(age, age2);
+
+    let name = 'heon';
+    let name2 = name;
+    console.log(name, name2);
+    name = '나는멍청이예예';
+    console.log(name, name2);
+
+    // Let's say we have an array
+    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+    // and we want to make a copy of it.
+    // const team = players;
+    // console.log(players, team);
+
+    // You might think we can just do something like this:
+    // team[3] = '멍멍이';
+
+    // however what happens when we update that array?
+
+    // now here is the problem!
+
+    // oh no - we have edited the original array too!
+
+    // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+
+    // So, how do we fix this? We take a copy instead!
+    // 레퍼런스가 아닌 깊은복사를 하는 방법.
+    const team2 = players.slice();
+    const team3 = [].concat(players);
+
+    // one way
+
+    // or create a new array and concat the old one in
+
+    // or use the new ES6 Spread
+    // ES6 ...문법으로 복사하는 방법
+    const team4 =  [...players];
+    team4[3]= 'dhdhdhdhdhhd'
+    console.log(team4);
+    console.log(`players: ${players}`);
+
+    const team5 = Array.from(players);
+
+
+    // now when we update it, the original one isn't changed
+
+    // The same thing goes for objects, let's say we have a person object
+
+    // with Objects
+    const person = {
+      name: 'Wes Bos',
+      age: 80
+    };
+
+    // and think we make a copy:
+    // const cap = person;
+    // cap.number = 1248291;
+    // console.log(person);
+
+    // how do we take a copy instead?
+    const cap2 = Object.assign({}, person, {number: 99, age : 21});
+    console.log(cap2);
+    console.log(person);
+
+    // We will hopefully soon see the object ...spread
+    // const cap3 = {...person}; (리엑트?)
+
+    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+
+    // 1레벨 의 얕은 복사만 되고 오브젝트 안의 오브젝트는 복사가되지 않고 참조해버림.
+
+    const heon = {
+      name : '정종헌',
+      age: 26,
+      social:{
+        instar: '몰라'
+      }
+    };
+
+    console.log(heon);
+    const dev = Object.assign({}, heon);
+
+    // JSON으로 변환한뒤 저장할경우 완전히 복사가 가능함.
+    // 성능이 저하됨으로 사용을 권장하지는 않음.
+    const dev2 = JSON.parse(JSON.stringify(heon));
+
+
+  </script>
+
+</body>
+</html>
