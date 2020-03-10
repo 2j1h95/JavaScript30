@@ -43,24 +43,26 @@
 <button></button>
 <script>
   const divs = document.querySelectorAll('div');
-  const button = document.querySelector('button');
-
-  function logText(e) {
+  
+  function logText(e){
     console.log(this.classList.value);
-    // e.stopPropagation(); // stop bubbling!
-    // console.log(this);
+    e.stopPropagation(); // 원하는 부분만 찾고 감싸고있는것들은 무시함?
   }
+  // document.body.addEventListener('click', logText);
+
+  //클릭시 안쪽에서 외부까지 출력
+  divs.forEach(div => div.addEventListener('click', logText));
+
+  //클릭시 외부부터 안쪽까지 앞쪽부터 출력
+  // divs.forEach(div => div.addEventListener('click', logText, {
+  //   capture :true //capture의 디폴트는 false
+  // }));
 
   divs.forEach(div => div.addEventListener('click', logText, {
-    capture: false,
-    once: true
+    capture :true //capture의 디폴트는 false
+    ,once :true //한번만 실행하고 이벤트리스너를 제거함 removeEventListener와 같은 역활을함 
   }));
 
-  button.addEventListener('click', () => {
-    console.log('Click!!!');
-  }, {
-    once: true
-  });
 
 </script>
 </body>
