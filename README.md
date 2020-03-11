@@ -158,7 +158,7 @@ __Day 11 Custom Video Player__
 
 <br><br>
 
-![day12](./readme_img/Day12.png)
+![day12](./readme_img/day12.png)
 __Day 12 Key Sequence Detection__
 
 제작자는 코나미커맨드에 영감이 떠올라서 만들어봤다고한다
