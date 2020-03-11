@@ -354,7 +354,7 @@ __Day 25 Event Capture, Propagation, Bubbling and Once__
 <br><br>
 
 ![day26](./readme_img/day26.gif)
-__26 - Stripe Follow Along Nav__
+__Day 26 Stripe Follow Along Nav__
 
 22번째 강의의 연장선 네비게이션 바의 포함되어있는 콘텐츠들의 배경을 자연스럽고 부드럽게 움직이게 했다.
 
@@ -372,4 +372,15 @@ __Day 27 Click and Drag__
 화면을 클릭하고 드래그하면 횡스크롤이 되는 웹페이지
 
 마우스의 클릭, 공간접근, 움직임을 이벤트리스너로 감시하고 마우스클릭을 트리거로 두어 누른상태부터 마우스가 이동한구간까지의 거리를 구해 스크롤되야하는 부분의 scrollLeft값에 변화를 줌으로써 클릭 앤 드래그가 가능해진다.
+
+<br><br>
+
+![day28](./readme_img/day28.gif)
+__Day 28 Video Speed Controller__
+
+영상의 속도를 조절하는 컨트롤러를 만들어봤다.
+
+`HTML`의 `video`태그의 `playbackRate`속성에 값을 제공해주면 재생속도가 변경된다. 기본값은 1이다
+
+속성값은 검색해서 찾았지만 재생속도의 최저값과 최고값을 설정해주는것을몰라 영상을 참고해서 할수 밖에 없었다..
 

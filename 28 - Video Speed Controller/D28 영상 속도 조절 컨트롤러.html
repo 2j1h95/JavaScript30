@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+    <div class="speed">
+      <div class="speed-bar">1×</div>
+    </div>
+  </div>
+
+<script>
+  const speed = document.querySelector('.speed');
+  const speedBar = speed.querySelector('.speed-bar');
+  const video = document.querySelector('video');
+
+
+
+  speed.addEventListener('mousemove', function(e){
+    const y =e.pageY - this.offsetTop;
+    const persent = y / this.offsetHeight;
+    const min = 0.4;
+    const max = 4;
+    const height = Math.round(persent * 100) + "%";
+    const playBackRate = persent *(max- min) + min;
+    speedBar.style.height = height;
+    speedBar.innerHTML = `${playBackRate.toFixed(2)}x`;
+    
+    video.playbackRate = playBackRate;
+    //playbackRate라는 속성을 직접 찾아서 했으나... 배속조절부분의 최저값과 최고값을 설정하는것을 몰라 영상을 참고함.
+  } );
+
+</script>
+</body>
+</html>
