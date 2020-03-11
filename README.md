@@ -220,7 +220,6 @@ __16 - Mouse Move Shadow__
 
 <br><br>
 
-![day17](./readme_img/day17.png)
 
 __Day 17 - Sort Without Articles__
 
