@@ -353,7 +353,7 @@ __Day 25 Event Capture, Propagation, Bubbling and Once__
 
 <br><br>
 
-![day26](./reamdm_img/day26.gif)
+![day26](./readme_img/day26.gif)
 __26 - Stripe Follow Along Nav__
 
 22번째 강의의 연장선 네비게이션 바의 포함되어있는 콘텐츠들의 배경을 자연스럽고 부드럽게 움직이게 했다.
