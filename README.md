@@ -13,7 +13,7 @@
 
 
 ---
-![day1](./readme_img/day1.png)
+<img src="./readme_img/day1.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 1 JavaScript Drum Kit__
 
@@ -26,7 +26,7 @@
 
 <br><br>
 
-![day2](./readme_img/day2.png)
+<img src="./readme_img/day2.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 2 Js and CSS Clock__
  
@@ -39,7 +39,7 @@ CSS로 역동적인 시계의 움직임을 줌.
 
 <br><br>
 
-![day3](./readme_img/day3.png)
+<img src="./readme_img/day3.png" style='display: block; margin: 0px auto;'/>
 ### __Day 3 CSS Variables__
 
 CSS에서도 변수를 만들어 특정 부분에 원하는 변화를 줄수있다.
@@ -51,7 +51,7 @@ dataset을 이용해서 data-## 부분들에 접근할수 있다.
 <br><br>
 
 
-![day4](./readme_img/day4.png)
+<img src="./readme_img/day4.png" style='display: block; margin: 0px auto;'/>
 ### __Day 4 Array Cardio Day 1__
 
 자바스크립트의 배열에 대해서 공부하는 1번째 단계
@@ -68,14 +68,14 @@ dataset을 이용해서 data-## 부분들에 접근할수 있다.
 예제에서는 inventors 배열에있는 모든 발명가들의 생존년도를 더해서 출력했다.
 <br><br>
 
-![day5](./readme_img/day5.png)
+<img src="./readme_img/day5.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 5 Flex Panel Gallery__
 
 CSS의 Flex에 대한 설명과 자바스크립트로 html에 특정 class를 토글할수있다는것을 배웠다.
 <br><br>
 
-![day6](./readme_img/day6.png)
+<img src="./readme_img/day6.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 6 Type Ahead__
 
@@ -86,7 +86,7 @@ CSS의 Flex에 대한 설명과 자바스크립트로 html에 특정 class를 �
 RegExp 라는 함수를 사용하게 됬는데 정규식에 일치하는 문자를 다른문자열로 변경할수 있음.
 <br><br>
 
-![day7](./readme_img/day7.png)
+<img src="./readme_img/day7.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 7 Array Cardio Day 2__
 
@@ -101,7 +101,7 @@ RegExp 라는 함수를 사용하게 됬는데 정규식에 일치하는 문자�
 ```findIndex``` 배열안에 만족하는 값의 인덱스를 출력한다.
 <br><br>
 
-![day8](./readme_img/day8.png)
+<img src="./readme_img/day8.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 8 Fun With HTML5 Canvas__
 
@@ -124,7 +124,7 @@ ES6문법도 하나 알게됬다. 값을 바꿔야할때
 
 <br><br>
 
-![day9](./readme_img/Day9.png)
+<img src="./readme_img/day9.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 9 Dev Tools Domination__
 
@@ -138,7 +138,7 @@ console.log()
 
 <br><br>
 
-![day10](./readme_img/day10.png)
+<img src="./readme_img/day10.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 10 Hold Shift and Check Checkboxes__
 
@@ -152,7 +152,7 @@ console.log()
 
 <br><br>
 
-![day11](./readme_img/day11.png)
+<img src="./readme_img/day11.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 11 Custom Video Player__
 
@@ -166,7 +166,7 @@ console.log()
 
 <br><br>
 
-![day12](./readme_img/day12.png)
+<img src="./readme_img/day12.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 12 Key Sequence Detection__
 
@@ -180,7 +180,7 @@ console.log()
 
 <br><br>
 
-![day13](./readme_img/day13.gif)
+<img src="./readme_img/day13.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 13 Slide in on Scroll__
 
@@ -206,7 +206,7 @@ ES6로 생긴 방법도 소개해줘서 좋았다.
 
 <br><br>
 
-![day15](./readme_img/day15.png)
+<img src="./readme_img/day15.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 15 LocalStorage__
 
@@ -223,7 +223,7 @@ JSON으로 변환해서 배열에 넣어야한다.
 <br><br>
 
 
-![day16](./readme_img/day16.gif)
+<img src="./readme_img/day16.gif" style='display: block; margin: 0px auto;'/>
 
 ### __16 - Mouse Move Shadow__
 
@@ -244,7 +244,7 @@ JSON으로 변환해서 배열에 넣어야한다.
 
 <br><br>
 
-![day18](./readme_img/day18.png)
+<img src="./readme_img/day18.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 18  Adding Up Times with Reduce__
 
@@ -260,7 +260,7 @@ JSON으로 변환해서 배열에 넣어야한다.
 
 <br><br>
 
-![day19](./readme_img/day19.png)
+<img src="./readme_img/day19.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 19 Webcam Fun__
 
@@ -276,7 +276,7 @@ JSON으로 변환해서 배열에 넣어야한다.
 
 <br><br>
 
-![day20](./readme_img/day20.png)
+<img src="./readme_img/day20.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 20 Speech Detection__
 
@@ -296,7 +296,7 @@ window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogn
 
 <br><br>
 
-![day21](./readme_img/day21.png)
+<img src="./readme_img/day21.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 21 Geolocation__
 
@@ -315,7 +315,7 @@ navigator.geolocation.watchPosition
 <br><br>
 
 
-![day22](./readme_img/day22.gif)
+<img src="./readme_img/day22.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 22 Follow Along Link Highlighter__
 
@@ -330,7 +330,7 @@ navigator.geolocation.watchPosition
 <br><br>
 
 
-![day23](./readme_img/day23.png)
+<img src="./readme_img/day23.png" style='display: block; margin: 0px auto;'/>
 
 ### __Day 23 Speech Synthesis__
 
@@ -345,7 +345,7 @@ navigator.geolocation.watchPosition
 <br><br>
 
 
-![day24](./readme_img/day24.gif)
+<img src="./readme_img/day24.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 24 Sticky Nav__
 
@@ -369,7 +369,7 @@ navigator.geolocation.watchPosition
 
 <br><br>
 
-![day26](./readme_img/day26.gif)
+<img src="./readme_img/day26.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 26 Stripe Follow Along Nav__
 
@@ -383,7 +383,7 @@ navigator.geolocation.watchPosition
 
 <br><br>
 
-![day27](./readme_img/day27.gif)
+<img src="./readme_img/day27.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 27 Click and Drag__
 
@@ -393,7 +393,7 @@ navigator.geolocation.watchPosition
 
 <br><br>
 
-![day28](./readme_img/day28.gif)
+<img src="./readme_img/day28.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 28 Video Speed Controller__
 
@@ -405,7 +405,7 @@ navigator.geolocation.watchPosition
 
 <br><br>
 
-![day29](./readme_img/day29.gif)
+<img src="./readme_img/day29.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 29 Countdown Timer__
 
@@ -425,7 +425,7 @@ navigator.geolocation.watchPosition
 
 <br><br>
 
-![day30](./readme_img/day30.gif)
+<img src="./readme_img/day30.gif" style='display: block; margin: 0px auto;'/>
 
 ### __Day 30 Whack A Mole__
 
