@@ -9,9 +9,13 @@
 
 영어지만 이해하기 어렵지않고 모르는것은 찾아보는식으로 공부했습니다.
 
+아래 내용들은 웹페이지의 구동모습과 만들면서 생각하거나 알게되거나 한것들을 적어두었습니다.
+
+
 ---
 ![day1](./readme_img/day1.png)
-__Day 1 JavaScript Drum Kit__
+
+### __Day 1 JavaScript Drum Kit__
 
 
 오디오 소스를 이용해 
@@ -23,7 +27,8 @@ __Day 1 JavaScript Drum Kit__
 <br><br>
 
 ![day2](./readme_img/day2.png)
-__Day 2 Js and CSS Clock__
+
+### __Day 2 Js and CSS Clock__
  
 
 자바스크립트로는 ```new Date()```를 이용해 현재의 시간을 가져와서
@@ -35,7 +40,7 @@ CSS로 역동적인 시계의 움직임을 줌.
 <br><br>
 
 ![day3](./readme_img/day3.png)
-__Day 3 CSS Variables__
+### __Day 3 CSS Variables__
 
 CSS에서도 변수를 만들어 특정 부분에 원하는 변화를 줄수있다.
 
@@ -47,7 +52,7 @@ dataset을 이용해서 data-## 부분들에 접근할수 있다.
 
 
 ![day4](./readme_img/day4.png)
-__Day 4 Array Cardio Day 1__
+### __Day 4 Array Cardio Day 1__
 
 자바스크립트의 배열에 대해서 공부하는 1번째 단계
 
@@ -64,14 +69,15 @@ __Day 4 Array Cardio Day 1__
 <br><br>
 
 ![day5](./readme_img/day5.png)
-__Day 5 Flex Panel Gallery__
+
+### __Day 5 Flex Panel Gallery__
 
 CSS의 Flex에 대한 설명과 자바스크립트로 html에 특정 class를 토글할수있다는것을 배웠다.
 <br><br>
 
 ![day6](./readme_img/day6.png)
 
-__Day 6 Type Ahead__
+### __Day 6 Type Ahead__
 
 외부에서 JSON 파일을 불러와 배열에 다시 저장하고, 그값을 검색한뒤에 최종적으로 일치하는 값을 사용자에게 출력해주는 웹페이지
 
@@ -82,7 +88,7 @@ RegExp 라는 함수를 사용하게 됬는데 정규식에 일치하는 문자�
 
 ![day7](./readme_img/day7.png)
 
-__Day 7 Array Cardio Day 2__
+### __Day 7 Array Cardio Day 2__
 
 배열을 공부하는 두번째 날
 
@@ -97,7 +103,7 @@ __Day 7 Array Cardio Day 2__
 
 ![day8](./readme_img/day8.png)
 
-__Day 8 Fun With HTML5 Canvas__
+### __Day 8 Fun With HTML5 Canvas__
 
 캔버스를 이용해 간단한 선을 그려보는 웹페이지
 
@@ -120,7 +126,7 @@ ES6문법도 하나 알게됬다. 값을 바꿔야할때
 
 ![day9](./readme_img/Day9.png)
 
-__Day 9 Dev Tools Domination__
+### __Day 9 Dev Tools Domination__
 
 
 다양한 콘솔 명령어에 대해서 알게됬다.
@@ -133,7 +139,8 @@ console.log()
 <br><br>
 
 ![day10](./readme_img/day10.png)
-__Day 10 Hold Shift and Check Checkboxes__
+
+### __Day 10 Hold Shift and Check Checkboxes__
 
 그냥 체크박스를 체크할떄는 그냥 체크되지만
 
@@ -146,7 +153,8 @@ __Day 10 Hold Shift and Check Checkboxes__
 <br><br>
 
 ![day11](./readme_img/day11.png)
-__Day 11 Custom Video Player__
+
+### __Day 11 Custom Video Player__
 
 정해진 비디오에 플레이어기능을 만들어본 웹페이지
 
@@ -159,7 +167,8 @@ __Day 11 Custom Video Player__
 <br><br>
 
 ![day12](./readme_img/day12.png)
-__Day 12 Key Sequence Detection__
+
+### __Day 12 Key Sequence Detection__
 
 제작자는 코나미커맨드에 영감이 떠올라서 만들어봤다고한다
 
@@ -172,7 +181,8 @@ __Day 12 Key Sequence Detection__
 <br><br>
 
 ![day13](./readme_img/day13.gif)
-__Day 13 Slide in on Scroll__
+
+### __Day 13 Slide in on Scroll__
 
 스크롤시에 슬라이드로 이미지가 추가되는 웹페이지
 
@@ -184,7 +194,7 @@ __Day 13 Slide in on Scroll__
 
 <br><br>
 
-__Day 14 JavaScript References VS Copying__
+### __Day 14 JavaScript References VS Copying__
 
 자바스크립트에서는 일반적인 변수(`let, var`)로 선언된 문자, 숫자 변수의 경우 복사를 해도 참조가 아닌 복사를 수행한다..... 만 변수만 그렇고
 
@@ -197,7 +207,8 @@ ES6로 생긴 방법도 소개해줘서 좋았다.
 <br><br>
 
 ![day15](./readme_img/day15.png)
-__Day 15 LocalStorage__
+
+### __Day 15 LocalStorage__
 
 브라우저 안에있는 로컬스토리지를 사용하는 방법을 알게되었다
 
@@ -211,8 +222,10 @@ JSON으로 변환해서 배열에 넣어야한다.
 
 <br><br>
 
+
 ![day16](./readme_img/day16.gif)
-__16 - Mouse Move Shadow__
+
+### __16 - Mouse Move Shadow__
 
 마우스의 움직임을 저장해 그림자를 변화시키는 웹페이지
 
@@ -221,7 +234,7 @@ __16 - Mouse Move Shadow__
 <br><br>
 
 
-__Day 17 - Sort Without Articles__
+### __Day 17 - Sort Without Articles__
 
 문자열의 앞에있는 The, An, A같은 관사를 제외하고 정렬을 하는 방법을 배웠다
 
@@ -233,7 +246,7 @@ __Day 17 - Sort Without Articles__
 
 ![day18](./readme_img/day18.png)
 
-__Day 18  Adding Up Times with Reduce__
+### __Day 18  Adding Up Times with Reduce__
 
 리듀스 함수를 이용해 시간, 분, 초를 출력하는 코드를 작성해봤다.
 
@@ -249,7 +262,7 @@ __Day 18  Adding Up Times with Reduce__
 
 ![day19](./readme_img/day19.png)
 
-__Day 19 Webcam Fun__
+### __Day 19 Webcam Fun__
 
 웹캠으로 이리저리 다양한 효과를 주는것을 만들어보았다.
 
@@ -265,7 +278,7 @@ __Day 19 Webcam Fun__
 
 ![day20](./readme_img/day20.png)
 
-__Day 20 Speech Detection__
+### __Day 20 Speech Detection__
 
 생각보다 어렵지 않았던 음성인식출력기를 제작해 봤다
 
@@ -285,7 +298,7 @@ window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogn
 
 ![day21](./readme_img/day21.png)
 
-__Day 21 Geolocation__
+### __Day 21 Geolocation__
 
 위치정보를 브라우저에서 이용할수 있는법을 알려준다
 
@@ -303,7 +316,8 @@ navigator.geolocation.watchPosition
 
 
 ![day22](./readme_img/day22.gif)
-__Day 22 Follow Along Link Highlighter__
+
+### __Day 22 Follow Along Link Highlighter__
 
 링크에 마우스 커서가 다가가면 하이라이터를 링크의 크기에 맞춰서 보여주고 다른 링크로 커서가 움직이면 하이라이터가 이동하면서 크기가 변경되서 새로 가르키고 있는 링크쪽으로 이동한다.
 
@@ -317,7 +331,8 @@ __Day 22 Follow Along Link Highlighter__
 
 
 ![day23](./readme_img/day23.png)
-__Day 23 Speech Synthesis__
+
+### __Day 23 Speech Synthesis__
 
 입력된 문장을 스피치엔진을 이용해 소리로 출력해준다 스피치엔진은 OS에 따라서 다르게 제공되기 때문에 웹페이지를 사용하는 환경에 따라 다른 스피치엔진을 사용하게 된다.
 
@@ -331,7 +346,8 @@ __Day 23 Speech Synthesis__
 
 
 ![day24](./readme_img/day24.gif)
-__Day 24 Sticky Nav__
+
+### __Day 24 Sticky Nav__
 
 상단에 네비게이션바를 고정하는 테크닉을 배우게 되었다.
 
@@ -343,7 +359,7 @@ __Day 24 Sticky Nav__
 
 <br><br>
 
-__Day 25 Event Capture, Propagation, Bubbling and Once__
+### __Day 25 Event Capture, Propagation, Bubbling and Once__
 
 브라우저에서 이벤트를 추가할때 어떤식으로 찾고 반응하고 감싸주는지 배웠다
 
@@ -354,7 +370,8 @@ __Day 25 Event Capture, Propagation, Bubbling and Once__
 <br><br>
 
 ![day26](./readme_img/day26.gif)
-__Day 26 Stripe Follow Along Nav__
+
+### __Day 26 Stripe Follow Along Nav__
 
 22번째 강의의 연장선 네비게이션 바의 포함되어있는 콘텐츠들의 배경을 자연스럽고 부드럽게 움직이게 했다.
 
@@ -367,7 +384,8 @@ __Day 26 Stripe Follow Along Nav__
 <br><br>
 
 ![day27](./readme_img/day27.gif)
-__Day 27 Click and Drag__
+
+### __Day 27 Click and Drag__
 
 화면을 클릭하고 드래그하면 횡스크롤이 되는 웹페이지
 
@@ -376,7 +394,8 @@ __Day 27 Click and Drag__
 <br><br>
 
 ![day28](./readme_img/day28.gif)
-__Day 28 Video Speed Controller__
+
+### __Day 28 Video Speed Controller__
 
 영상의 속도를 조절하는 컨트롤러를 만들어봤다.
 
@@ -387,7 +406,8 @@ __Day 28 Video Speed Controller__
 <br><br>
 
 ![day29](./readme_img/day29.gif)
-__Day 29 Countdown Timer__
+
+### __Day 29 Countdown Timer__
 
 타이머를 구현하는 웹페이지를 만들었다
 
@@ -402,4 +422,20 @@ __Day 29 Countdown Timer__
 최대한 내가 아는 지식으로만 해보려고 했다...만 역시나 힘들었다
 
 
+
+<br><br>
+
+![day30](./readme_img/day30.gif)
+
+### __Day 30 Whack A Mole__
+
+일명 두더지 잡기 게임을 자바스크립트로 만들어봤다
+
+강의를 보고 하려다 보다보니 그냥 내가 알고있는 지식으로 해도 되겠다 싶어서 알고있는걸로 다 해봤다.
+
+결과는 성공. 
+
+처음에 시간을 정하는것만 강의를 참고했다. 나머지 기능들은 순수 구현. 두더지를 중복 클릭하면 접수가 계속 입력되길래 두더지의 `Class`에 `up`이 있는 상황과 플래그 부울변수인 `scoreUp`을 하나 만들어서 이 변수가 ture가 되면 클릭이 안되도록 제작했다.
+
+게임은 10초동안 진행되며 진행되는 10초동안에는 버튼이 사라지도록 했다. 혹시나 두더지 누르다가 다시 눌러서 게임 처음부터 시작하면 기분 나빠서다.
 

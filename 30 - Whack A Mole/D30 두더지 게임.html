@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>두더지 게임</title>
+  <link href="https://fonts.googleapis.com/css?family=Poor+Story&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>두더지 게임 <span class="score">0</span></h1>
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+  <button onClick="startGame()">시작</button>
+<script>
+  const holes = document.querySelectorAll('.hole');
+  const scoreBoard = document.querySelector('.score');
+  const moles = document.querySelectorAll('.mole');
+  const button = document.querySelector('button');
+  let lasthole;
+  let timeUp = false;
+  let score = 0;
+  let scoreUp = false;
+
+
+function randomTime(min, max){
+  return Math.round(Math.random() * (max - min) + min);
+}
+
+function randomHole(holes){
+  const idx = Math.floor(Math.random() * holes.length);
+  if(lasthole === idx) return randomHole(holes);
+  const hole = holes[idx];
+  lasthole = idx;
+  return hole;
+}
+
+function poop (){
+  const time = randomTime(200, 1000);
+  const hole = randomHole(holes);
+  console.log(time, hole)
+  hole.classList.add('up');
+  scoreUp = false;
+  setTimeout(()=>{
+    hole.classList.remove('up');
+    if (!timeUp) poop();
+  }, time)
+}
+
+function handleScore(e){
+  if(!e.isTrusted) return; 
+  if (!this.classList.contains('up') || scoreUp) return;
+  score += 1;
+  scoreBoard.textContent = score;
+  scoreUp = true;
+}
+
+function startGame(){
+  button.classList.add('ingame');
+  timeUp = false;
+  scoreBoard.textContent = 0;
+  score = 0;
+  poop();
+  setTimeout(()=>{
+    button.classList.remove('ingame');
+    timeUp = true
+  }, 10000);
+}
+
+holes.forEach(hole=> hole.addEventListener('click', handleScore));
+
+
+</script>
+</body>
+</html>

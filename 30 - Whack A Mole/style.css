@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  background: #6ec7dd;
 }
 
 *, *:before, *:after {
@@ -11,7 +11,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Poor Story', cursive;
 }
 
 h1 {
@@ -66,4 +66,23 @@ h1 {
 
 .hole.up .mole {
   top: 0;
+}
+
+button{
+  display: block;
+  font-family: 'Poor Story', cursive;
+  border: 0 none;
+  transition: 0.2s;
+  width: 100px;
+  height: 50px;
+  left: auto;
+  right: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.ingame{
+  display: none;
 }
